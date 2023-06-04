@@ -43,7 +43,8 @@ async function getMenu() {
             console.log(paymentStatus);
             if(paymentStatus.paid == true)
                 thankyouFnc();
-        });
+        })
+        .catch(error);
 }
 
 getMenu();
