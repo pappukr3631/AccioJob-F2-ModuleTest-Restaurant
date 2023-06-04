@@ -44,7 +44,9 @@ async function getMenu() {
             if(paymentStatus.paid == true)
                 thankyouFnc();
         })
-        .catch(error);
+        .catch((error) => {
+            alert("Some error occured: " + error)
+        });
 }
 
 getMenu();
